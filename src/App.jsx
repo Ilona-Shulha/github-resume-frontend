@@ -1,7 +1,10 @@
+import { React, useState } from 'react';
+
 import { Main } from "./components/Main/Main";
 import { NotFoundUser } from "./components/NotFoundUser/NotFoundUser";
 import { UserPage } from "./components/UserPage/UserPage";
-import { React, useState } from 'react';
+
+import './App.scss';
 
 function App() {
   const [currentComponent, setCurrentComponent] = useState('main');
@@ -9,7 +12,6 @@ function App() {
 
   return (
     <div className="App">
-      {/* This is App.jsx file. */}
       {currentComponent === 'main' && (
         <Main
           setCurrentComponent={setCurrentComponent}
