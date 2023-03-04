@@ -1,6 +1,6 @@
 const BASE_URL = 'https://api.github.com/users/';
 
-export async function getUser(url) {
+export async function getUserInfo(url) {
   const method = 'GET';
   const options = { method }
 
@@ -10,11 +10,12 @@ export async function getUser(url) {
 
   const response = await fetch(`${BASE_URL}${url}`, options);
 
-  if (!response.ok) {
-    return false;
-  }
+  // if (!response.ok) {
+  //   return false;
+  // }
 
-  const result = await response.json(response);
+  // const result = await response.json(response);
+  // return true;
 
-  return true;
+  return response;
 }

@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      This is App.jsx file.
+      {/* This is App.jsx file. */}
       {currentComponent === 'main' && (
         <Main
           setCurrentComponent={setCurrentComponent}
